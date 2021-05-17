@@ -1,0 +1,15 @@
+#AddDefaultCharset utf-8
+
+RewriteBase /
+Options All
+Options -Indexes
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.yourdomain\.com$ [NC]
+RewriteRule ^(.*)$ http://yourdomain.com/$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-l
+
+RewriteRule ^(.*)$ index.php/$1 [L,QSA]

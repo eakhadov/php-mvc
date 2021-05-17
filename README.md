@@ -1,0 +1,1 @@
+## Mini PHP MVC site based on modules with plugins

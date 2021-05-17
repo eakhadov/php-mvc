@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  app:
+    image: php:7.4-apache
+    command: a2enmod rewrite && systemctl restart apache2
+    ports:
+      - 8080:80
+    volumes:
+      - .:/var/www/html

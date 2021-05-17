@@ -1,0 +1,20 @@
+{
+    "name": "php-mvc/php-mvc",
+    "description":"Mini PHP MVC site based on modules with plugins",
+    "license": "MIT",
+    "keywords": ["php", "mvc"],
+    "require": {
+        "twig/twig": "3.0",
+        "vlucas/phpdotenv": "^5.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Engine\\": "engine",
+            "Plugin\\": "content/plugins",
+            "Modules\\": "modules"
+        },
+        "files": [
+            "engine/functions.php"
+        ]
+    }
+}

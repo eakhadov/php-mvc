@@ -1,0 +1,13 @@
+# Configs
+/app/config/*.php
+
+# Temp files
+/server/cache/*
+/server/logs/*
+/server/sessions/*
+
+# Defaults
+.env
+!.gitkeep
+/node_modules/
+/vendor/
